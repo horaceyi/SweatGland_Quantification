@@ -42,6 +42,7 @@ def train_model(model, criterion, optimizer, train_loader, val_loader, num_epoch
             loss.backward()
             optimizer.step()
             epoch_loss += loss.item()
+        epoch_loss /= len(train_loader)
 
         model.eval()
         val_epoch_loss = 0
@@ -51,7 +52,8 @@ def train_model(model, criterion, optimizer, train_loader, val_loader, num_epoch
                 labels = map_labels(torch.squeeze(y.to(device).long()))
                 outputs = model(inputs)
                 val_epoch_loss += criterion(outputs, labels).item()
-
+        val_epoch_loss /= len(val_loader)
+        
         scheduler.step()
         print(f"Loss: {epoch_loss:.4f} | Val_Loss: {val_epoch_loss:.4f}")
         hist[_epoch, :] = [epoch, epoch_loss, val_epoch_loss]
