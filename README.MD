@@ -44,7 +44,7 @@ python Code/2_PostProcess_Quantification.py
 ```
 Output Destination: The finalized quantitative results will be automatically aggregated and exported into Final_Quantification_Table.csv in your root directory.
 
-📂 Repository Structure
+## 📂 Repository Structure
 To verify your local repository path alignment, ensure your file tree matches the standardized organizational structure below:
 SweatGland_Quantification/
 ```text
@@ -64,6 +64,7 @@ SweatGland_Quantification/
 ├── environment.yml                       # Conda environment dependency registry
 ├── LICENSE                               # MIT Open-Source License
 └── README.md                             # Software documentation manual
+```
 
-📜 License
+## 📜 License
 This project is licensed under the standard MIT License - see the LICENSE file for details.
