@@ -47,6 +47,8 @@ Output Destination: The finalized quantitative results will be automatically agg
 📂 Repository Structure
 To verify your local repository path alignment, ensure your file tree matches the standardized organizational structure below:
 SweatGland_Quantification/
+```text
+SweatGland_Quantification/
 ├── Code/
 │   ├── 0_Train_Model.py                  # Model training and optimization loop
 │   ├── 1_Inference_Batch.py              # Batch tensor inference and mask generation
