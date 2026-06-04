@@ -15,24 +15,33 @@ Open your terminal or Git Bash, navigate to the project directory, and execute:
 1. Create the virtual environment from the yml file:
 ```bash
 conda env create -f environment.yml
+```
 
 2. Activate the newly created environment:
+```bash
 conda activate depthnet_env
+```
 
 How to Run the Pipeline
 The core software code package is structured as an end-to-end executable pipeline containing three sequential production modules. Please run the scripts chronologically from your active Conda environment:
 
 Step 1: Model Training (Optional)
 If you wish to retrain the architecture on your customized datasets under our hyperparameter constraints, execute the optimization loop:
+```bash
 python Code/0_Train_Model.py
+```
 
 Step 2: Batch Inference & Spatial Gating
 To execute automated batch prediction on raw localized hind paw profiles using our optimized pre-trained weights (final_model.pth):
+```bash
 python Code/1_Inference_Batch.py
+```
 
 Step 3: Post-Processing & Quantitative Extraction
 To filter out non-functional spatial artifacts, execute 8-connectivity Connected Component Analysis (CCA), and export the finalized metrics:
+```bash
 python Code/2_PostProcess_Quantification.py
+```
 Output Destination: The finalized quantitative results will be automatically aggregated and exported into Final_Quantification_Table.csv in your root directory.
 
 📂 Repository Structure
@@ -53,5 +62,6 @@ SweatGland_Quantification/
 ├── environment.yml                       # Conda environment dependency registry
 ├── LICENSE                               # MIT Open-Source License
 └── README.md                             # Software documentation manual
+
 📜 License
 This project is licensed under the standard MIT License - see the LICENSE file for details.
