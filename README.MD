@@ -1,3 +1,7 @@
+# DepthNet: Automated Mouse Footpad and Active Sudomotor Segmentation Pipeline
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20641127.svg)](https://doi.org/10.5281/zenodo.20641127)
+
 # SweatGland_Quantification
 
 Official implementation of the automated deep-learning pipeline (**DepthNet**) for high-throughput mouse sudomotor function quantification via U-Net. This repository directly supports our ***Nature Protocols* submission**.
