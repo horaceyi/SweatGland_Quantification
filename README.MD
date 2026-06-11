@@ -1,5 +1,6 @@
 # SweatGland_Quantification
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20641127.svg)](https://doi.org/10.5281/zenodo.20641127)
+
 Official implementation of the automated deep-learning pipeline (**DepthNet**) for high-throughput mouse sudomotor function quantification via U-Net. This repository directly supports our ***Nature Protocols* submission**.
 
 The analytical framework orchestrates continuous algorithmic execution across major structural milestones: localized region-of-interest (ROI) tensor cropping ($288 \times 288$ pixels), background noise attenuation, neural network segmentation gating, and automated wide-format spreadsheet matrix reshaping.
